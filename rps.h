@@ -8,25 +8,30 @@ class Game {
         int maxRound = 0;
 
         //getters
-        int getRound(){}
-        int getMaxRound(){}
+        int getRound(){return roundsPlayed;}
+        int getMaxRound(){return maxRound;}
         //setters
         void setRound(int round){}
-        void setMaxRound(int mxRound){}
+        void setMaxRound(int mxRound){}   
 };
 
 class Player {
     private:
-        int wins;
+        int wins = 0;
         int choice;
     public:
         //getters
-        int getWins(){}
-        int getChoice(){}
+        int getChoice(){return choice;}
+        int getWins(){return wins;}
         //setters
-        void setWins(){}
+        void addWin(){wins++;}
         void setChoice(){}
 };
+
+class Computer {
+    private:
+        int 
+}
 
 
 void setup(){}
